@@ -1,0 +1,65 @@
+﻿namespace Car_Part_Managment_Service
+{
+    partial class UC_Home
+    {
+        /// <summary> 
+        ///Gerekli tasarımcı değişkeni.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        ///Kullanılan tüm kaynakları temizleyin.
+        /// </summary>
+        ///<param name="disposing">yönetilen kaynaklar dispose edilmeliyse doğru; aksi halde yanlış.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Bileşen Tasarımcısı üretimi kod
+
+        /// <summary> 
+        /// Tasarımcı desteği için gerekli metot - bu metodun 
+        ///içeriğini kod düzenleyici ile değiştirmeyin.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(214, 158);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(612, 79);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Inventory / Pricing";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // UC_Home
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "UC_Home";
+            this.Size = new System.Drawing.Size(1040, 395);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+    }
+}
