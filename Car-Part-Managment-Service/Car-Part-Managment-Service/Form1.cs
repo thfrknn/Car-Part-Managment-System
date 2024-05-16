@@ -67,5 +67,32 @@ namespace Car_Part_Managment_Service
             SignIn signInForm = new SignIn();
             signInForm.Show();
         }
+
+        private void txtuname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                // Enter tuşuna basıldığında txtpass'a odaklan
+                txtpass.Focus();
+                // Tuşa basma işlemi burada işlensin
+                e.Handled = true;
+            }
+        }
+
+        private void txtpass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                // Enter tuşuna basıldığında login butonunu tıkla
+                login_Click(sender, e);
+                // Tuşa basma işlemi burada işlensin
+                e.Handled = true;
+            }
+        }
+
+        private void gunaCircleButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

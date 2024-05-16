@@ -36,6 +36,7 @@
             this.txtuname = new System.Windows.Forms.TextBox();
             this.signin = new System.Windows.Forms.Button();
             this.login = new System.Windows.Forms.Button();
+            this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,7 +80,7 @@
             // 
             // txtpass
             // 
-            this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtpass.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtpass.Location = new System.Drawing.Point(146, 157);
             this.txtpass.Multiline = true;
             this.txtpass.Name = "txtpass";
@@ -89,7 +90,7 @@
             // 
             // txtuname
             // 
-            this.txtuname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtuname.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtuname.Location = new System.Drawing.Point(146, 74);
             this.txtuname.Multiline = true;
             this.txtuname.Name = "txtuname";
@@ -118,6 +119,31 @@
             this.login.UseVisualStyleBackColor = true;
             this.login.Click += new System.EventHandler(this.login_Click);
             // 
+            // gunaCircleButton1
+            // 
+            this.gunaCircleButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton1.AnimationSpeed = 0.03F;
+            this.gunaCircleButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton1.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCircleButton1.Image")));
+            this.gunaCircleButton1.ImageSize = new System.Drawing.Size(72, 72);
+            this.gunaCircleButton1.Location = new System.Drawing.Point(570, 12);
+            this.gunaCircleButton1.Name = "gunaCircleButton1";
+            this.gunaCircleButton1.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton1.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton1.OnHoverForeColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton1.OnHoverImage = null;
+            this.gunaCircleButton1.OnPressedColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton1.Size = new System.Drawing.Size(75, 94);
+            this.gunaCircleButton1.TabIndex = 2;
+            this.gunaCircleButton1.Text = "gunaCircleButton1";
+            this.gunaCircleButton1.Click += new System.EventHandler(this.gunaCircleButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -125,7 +151,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(648, 459);
+            this.Controls.Add(this.gunaCircleButton1);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SEN CAR PART SHOP";
@@ -145,5 +173,6 @@
         private System.Windows.Forms.Button signin;
         private System.Windows.Forms.Button login;
         private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaCircleButton gunaCircleButton1;
     }
 }

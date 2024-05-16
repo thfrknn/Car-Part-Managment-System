@@ -47,5 +47,11 @@ namespace Car_Part_Managment_Service
             UC_Selling uC_Selling = new UC_Selling();
             addUserControl(uC_Selling);
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            
+        }
     }
 }
