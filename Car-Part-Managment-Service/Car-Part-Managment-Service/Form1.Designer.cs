@@ -132,14 +132,14 @@
             this.gunaCircleButton1.ForeColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCircleButton1.Image")));
             this.gunaCircleButton1.ImageSize = new System.Drawing.Size(72, 72);
-            this.gunaCircleButton1.Location = new System.Drawing.Point(570, 12);
+            this.gunaCircleButton1.Location = new System.Drawing.Point(579, 1);
             this.gunaCircleButton1.Name = "gunaCircleButton1";
             this.gunaCircleButton1.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton1.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton1.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton1.OnHoverImage = null;
             this.gunaCircleButton1.OnPressedColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton1.Size = new System.Drawing.Size(75, 94);
+            this.gunaCircleButton1.Size = new System.Drawing.Size(57, 94);
             this.gunaCircleButton1.TabIndex = 2;
             this.gunaCircleButton1.Text = "gunaCircleButton1";
             this.gunaCircleButton1.Click += new System.EventHandler(this.gunaCircleButton1_Click);

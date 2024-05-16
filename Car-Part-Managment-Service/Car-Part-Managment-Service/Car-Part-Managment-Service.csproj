@@ -56,6 +56,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarPartDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarPartDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPages\UC_CustomerHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerPages\UC_CustomerHistory.Designer.cs">
+      <DependentUpon>UC_CustomerHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPages\UC_CustomerList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerPages\UC_CustomerList.Designer.cs">
+      <DependentUpon>UC_CustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPages\UC_CustomerSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerPages\UC_CustomerSetting.Designer.cs">
+      <DependentUpon>UC_CustomerSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +123,15 @@
     <Compile Include="UserControls\UC_Selling.Designer.cs">
       <DependentUpon>UC_Selling.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomerPages\UC_CustomerHistory.resx">
+      <DependentUpon>UC_CustomerHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerPages\UC_CustomerList.resx">
+      <DependentUpon>UC_CustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerPages\UC_CustomerSetting.resx">
+      <DependentUpon>UC_CustomerSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +162,17 @@
     <EmbeddedResource Include="UserControls\UC_Selling.resx">
       <DependentUpon>UC_Selling.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CarPartDataSet.xsc">
+      <DependentUpon>CarPartDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CarPartDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CarPartDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CarPartDataSet.xss">
+      <DependentUpon>CarPartDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
