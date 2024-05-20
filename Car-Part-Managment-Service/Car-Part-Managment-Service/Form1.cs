@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Car_Part_Managment_Service
@@ -10,6 +11,7 @@ namespace Car_Part_Managment_Service
         public Form1()
         {
             InitializeComponent();
+            button2.Click += new EventHandler(button2_Click);
         }
 
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-78855J8\\SQLEXPRESS;Initial Catalog=CarPart;Integrated Security=True;");
@@ -91,6 +93,22 @@ namespace Car_Part_Managment_Service
         }
 
         private void gunaCircleButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+            // Bekleme süresi (örneğin 5 saniye)
+            await Task.Delay(5000);
+
+            // Pencereyi geri getirme
+            this.WindowState = FormWindowState.Normal;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
